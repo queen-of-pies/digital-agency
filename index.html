@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Агенство цифровых продуктов</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__section">
       <div class="container">
         <div class="header-wrapper">
           <a class="header-logo"
@@ -24,8 +29,7 @@
               </li>
               <li class="header__item header__item--mr-28">
                 <a href="#" class="header__link"
-                  >Лэндинги
-                  <img
+                  >Лэндинги<img
                     src="img/arrow-down.svg"
                     alt="Icon: arrow down"
                     class="header__arrow"
@@ -33,15 +37,14 @@
               </li>
               <li class="header__item">
                 <a href="#" class="header__link"
-                  >Страницы
-                  <img
+                  >Страницы<img
                     src="img/arrow-down.svg"
                     alt="Icon: arrow down"
                     class="header__arrow"
                 /></a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">Помощь</a>
+                <a href="#" class="header__link">Помощь </a>
               </li>
             </ul>
             <!-- /.header__ul -->
@@ -53,5 +56,34 @@
       <!-- /.container -->
     </header>
     <!-- /.header -->
+    <section class="hero">
+      <img
+        src="img/hero-background.jpg"
+        alt="Image: devices"
+        class="hero__image"
+      />
+      <div class="container">
+        <div class="hero-wrapper">
+          <h1 class="hero__title">
+            Номер #1,<br /><span class="hero__title--small"> Южная Азия</span
+            ><br />Агенство цифровых продуктов
+          </h1>
+          <p class="hero__description">
+            Мы даем результаты, помогающие Вам добиться экономии средств и
+            времени без риска или накладных расходов на управление
+          </p>
+          <button class="hero__button">Наше портфолио</button>
+          <a class="hero__link" href="#"
+            ><img
+              src="img/hero-image-arrow.svg"
+              alt="Icon: arrow down"
+              class="hero__link-image"
+          /></a>
+        </div>
+        <!-- /.hero-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
   </body>
 </html>

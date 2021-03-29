@@ -1,5 +1,7 @@
 .header
-  background-color: #FAFDFF
+  background-color: #FAFDFF  
+  &__section
+    margin-bottom: 52px  
   &-wrapper
     display: flex
     justify-content: space-between
@@ -12,21 +14,24 @@
     align-items: center
     list-style: none
     padding: 0
-    margin-right: 43px
+    margin-right: 16px
     margin-top: 0
     margin-bottom: 0
   &__item
-    margin-right: 22px
+    margin-right: 27px
     &--mr-28
-      margin-right: 28px
+      margin-right: 33px
   &__link
     text-decoration: none
-    color: $dark-text
+    color: $dark
     font-weight: 600
     font-size: 16px
     line-height: 22px
+  &__arrow
+    margin-left: 3px
   &__button
-    padding: 13px 24px
+    min-width: 131px
+    min-height: 48px
     border: 2px solid #1565D8
     border-radius: 8px
     background-color: #FAFDFF
@@ -34,4 +39,5 @@
     font-size: 16px
     line-height: 22px
     color: #1565D8
-    
+    cursor: pointer
+    outline: none    
