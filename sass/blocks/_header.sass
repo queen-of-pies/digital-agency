@@ -14,13 +14,17 @@
     align-items: center
     list-style: none
     padding: 0
-    margin-right: 16px
+    margin-right: 27.1px
     margin-top: 0
     margin-bottom: 0
+    letter-spacing: 0.5px
   &__item
     margin-right: 27px
     &--mr-28
       margin-right: 33px
+    &-wrapper
+      display: flex
+      align-items: center
   &__link
     text-decoration: none
     color: $dark
@@ -43,4 +47,22 @@
     outline: none
   &__menu
     &-button
-      display: none    
+      display: none  
+.dropdown
+  position: relative
+  &__content
+    display: none
+    position: absolute
+    width: 100%
+    background-color: $dark    
+    z-index: 10
+  &__link
+    text-decoration: none
+    color: #ffffff
+    margin-top: 5px
+  &:hover
+    .dropdown
+      &__content
+       display: flex
+       flex-direction: column
+       align-items: center
