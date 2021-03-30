@@ -60,6 +60,8 @@
     &-wrapper
       align-items: center
       text-align: center
+      &__link
+        width: auto
 @media ( max-width: 576px )
   .container
     max-width: 460px
@@ -79,6 +81,7 @@
     &__section
       margin-bottom: 36px
   .hero
+    padding-top: 36px
     &__title
       font-size: 30px
       line-height: 36px 
@@ -90,7 +93,7 @@
       width: 280px
       font-size: 16px
       line-height: 28px
-      margin-bottom: 18px
+      margin-bottom: 15px
     &__button
       font-size: 16px
       line-height: 22px
@@ -106,3 +109,7 @@
       &-image
         width: 48px
         height: 48px
+@media (min-width: 992px)
+  button:hover, .hover:hover
+    background-color: lighten($dark, 10%)
+    transition: background-color .5s ease-in-out

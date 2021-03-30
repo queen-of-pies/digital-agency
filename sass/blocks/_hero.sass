@@ -1,16 +1,20 @@
 .hero
-  padding-bottom: 81px
+  padding-top: 56px
+  padding-bottom: 105px
   position: relative
   overflow: hidden
   &__image
     position: absolute
     left: 48%
-    top: 1%
+    top: 8%
     &--small
       display: none
   &-wrapper
     display: flex
     flex-direction: column
+    &__link
+      width: 54px
+      height: 56px
   &__title
     font-family: 'Roboto', sans-serif
     font-weight: bold
@@ -26,16 +30,13 @@
       line-height: 53px;
   &__description
     max-width: 457px
-    font-size: 18px
-    line-height: 32px
-    color: #5A7184
-    -webkit-text-stroke: 1px black
     margin-bottom: 63px
     margin-top: 0
   &__button
     border-radius: 8px
+    padding: 16px 24px 15px 24px
     width: 243px
-    min-height: 56px
+    // min-height: 56px
     background-color: $dark
     font-weight: bold
     font-size: 18px
@@ -43,7 +44,7 @@
     color: #ffffff
     border: none
     margin-bottom: 56px
-    cursor: 
+    cursor: pointer
   &__link
     &-image
      width: 54px
