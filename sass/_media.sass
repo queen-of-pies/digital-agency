@@ -1,6 +1,28 @@
 @media   ( max-width:  1200px)
   .container
     max-width: 960px 
+  .partners
+    padding-bottom: 80px
+    &-wrapper
+      justify-content: space-between
+    &__title
+      margin-right: 0
+      font-size: 34px
+    &__corporations
+      justify-content: space-between
+    &__corporation
+      &--slack, &--netflix, &--fitbit, &--google
+        margin-right: 0
+  .services
+    &-wrapper
+      justify-content: space-between
+    &__title
+      margin-right: 0
+    &__description
+      width: 400px
+  .card
+    &-wrapper
+      justify-content: space-evenly
 @media   ( max-width: 992px )
   button
     cursor: auto
@@ -12,6 +34,10 @@
     &__description
       max-width: 375px
       font-size: 20px
+  .partners
+    padding-top: 60px
+    &-wrapper
+      flex-wrap: wrap
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -62,6 +88,18 @@
       text-align: center
       &__link
         width: auto
+  .partners
+    &-wrapper
+      justify-content: center
+    &__corporation
+      &--airbnb
+        display: none
+  .services
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__description
+      text-align: center
 @media ( max-width: 576px )
   .container
     max-width: 460px
@@ -71,17 +109,32 @@
       &--small
         width: 800px
         margin-left: -14%
+  .partners
+    &__description
+      text-align: center
+    &__corporations
+      flex-wrap: wrap
+      justify-content: center
+    &__corporation
+      margin-right: 40px
+      margin-bottom: 30px
 @media ( max-width: 460px ) 
   .container
     max-width: 280px
     width: 90% 
+  .section
+    &__title
+      font-size: 28px
+      line-height: 29px
   .header
+    padding-bottom: 0
     &-wrapper
       height: 64px
     &__section
-      margin-bottom: 36px
+      margin-bottom: 0
   .hero
     padding-top: 36px
+    padding-bottom: 13px
     &__title
       font-size: 30px
       line-height: 36px 
@@ -109,6 +162,50 @@
       &-image
         width: 48px
         height: 48px
+  .partners
+    padding-bottom: 44px
+    &-wrapper
+      margin-bottom: 25px
+    &__title
+      text-align: center
+      margin-top: 23px
+      margin-bottom: 16px
+    &__description
+      font-size: 13px
+      line-height: 24px
+      margin: 0
+    &__corporation
+      width: 98px
+      height: 31px
+      margin-right: 32px
+      margin-bottom: 25px
+      &--netflix
+        margin-right: 0
+      &--slack
+        width: 108px
+    &__subtitle
+      margin-left: 77px
+  .services
+    padding-top: 36px
+    &-wrapper
+      margin-bottom: 0
+    &__description
+      font-size: 16px
+      line-height: 28px
+      margin-top: 19px
+      margin-bottom: 6px
+  .card
+    width: 280px
+    min-height: 197px
+    flex-direction: column
+    margin-bottom: 7px
+    padding: 24px 10px 0 20px
+    // padding-top: 24px
+    &__title
+      font-size: 20px
+      line-height: 24px
+      margin-top: 19px
+      margin-bottom: 8px
 @media (min-width: 992px)
   button:hover, .hover:hover
     background-color: lighten($dark, 10%)
