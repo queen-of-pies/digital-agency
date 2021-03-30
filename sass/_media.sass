@@ -1,0 +1,108 @@
+@media   ( max-width:  1200px)
+  .container
+    max-width: 960px 
+@media   ( max-width: 992px )
+  button
+    cursor: auto
+  .container
+    max-width: 760px 
+  .hero
+    &__title
+      max-width: 460px
+    &__description
+      max-width: 375px
+      font-size: 20px
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 90%
+  .header
+    &__section
+      margin-bottom: 30px
+    &-nav
+      display: none
+    &__logo
+      width: 83px
+  .menu
+    &-button
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      padding: 0
+      width: 22px
+      height: 17.7px
+      border: none
+      background-color: #ffffff
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2.2px
+        background-color: #3A4C66
+  .hero
+    &__image
+      display: none
+      &--small
+        display: block
+        width: 900px
+    &__title
+      font-size: 36px
+      line-height: 50px
+      &--small
+        font-size: 28px
+    &__description
+      -webkit-text-stroke: 1px transparent
+      margin-bottom: 40px
+    &__button
+      margin-bottom: 40px
+    &__link
+      margin-top: -20px
+    &-wrapper
+      align-items: center
+      text-align: center
+@media ( max-width: 576px )
+  .container
+    max-width: 460px
+    width: 90%
+  .hero
+    &__image
+      &--small
+        width: 800px
+        margin-left: -14%
+@media ( max-width: 460px ) 
+  .container
+    max-width: 280px
+    width: 90% 
+  .header
+    &-wrapper
+      height: 64px
+    &__section
+      margin-bottom: 36px
+  .hero
+    &__title
+      font-size: 30px
+      line-height: 36px 
+      margin-bottom: 8px
+      &--small
+        font-size: 30px
+        line-height: 36px 
+    &__description
+      width: 280px
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 18px
+    &__button
+      font-size: 16px
+      line-height: 22px
+      width: 220px
+      min-height: 48px
+      margin-bottom: 48px
+    &__image
+      &--small
+        width: 499px
+        margin-left: -14%
+    &__link
+      margin-top: -35px
+      &-image
+        width: 48px
+        height: 48px
