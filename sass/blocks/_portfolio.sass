@@ -1,6 +1,8 @@
 .slide
   &-wrapper
-    padding: 24px
+    padding: 24px 17px 24px 24px
+  &__image
+    width: 358px
   &__subtitle
     font-weight: 600
     font-size: 14px
@@ -17,6 +19,8 @@
     margin-top: 16px
 .portfolio
   padding-top: 87px
+  &__cards
+    display: none
   &__container
     position: relative
   &__title
@@ -24,17 +28,29 @@
     margin-bottom: 48px
     letter-spacing: -2.9px
   &-slider
+    &__item
+      &--border
+        max-width: 360px
+        border: 1px solid #DDE6F4
+        border-radius: 8px
     &__button
       position: absolute
-      top: 65%
+      top: 64%
       z-index: 99
+      outline: none
       &--prev
         width: 14px
         height: 18px
         right: 15.5%
+        fill: $dark
       &--next
         height: 18px
         width: 14px
         right: 10.5%
+        transform: rotate(180deg)
       &-img
         transform: rotate(180deg)
+.swiper
+  &-button
+    &-disabled
+      fill: #959EAD

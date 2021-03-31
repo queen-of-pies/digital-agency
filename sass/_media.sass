@@ -209,6 +209,14 @@
       order: -2
       &--change
         order: -1
+.portfolio
+  &-slider
+    display: none
+    &__button
+      display: none
+  &__cards
+    display: flex
+    flex-direction: column
 @media (min-width: 992px)
   button:hover, .hover:hover
     background-color: lighten($dark, 10%)

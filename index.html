@@ -267,14 +267,88 @@
         <span class="portfolio__subtitle section__subtitle">портфолио</span>
         <h2 class="portfolio__title section__title">Наши проекты</h2>
         <div class="portfolio-slider__button portfolio-slider__button--prev">
-          <img src="img/slide/slider-arrow.svg" alt="Icon: slider arrow" />
+          <svg
+            width="15"
+            height="14"
+            viewBox="0 0 15 14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.03125 12.9375C9.34375 12.625 9.3125 12.1562 9.03125 11.8438L5.25 8.25H14.25C14.6562 8.25 15 7.9375 15 7.5V6.5C15 6.09375 14.6562 5.75 14.25 5.75H5.25L9.03125 2.1875C9.3125 1.875 9.34375 1.40625 9.03125 1.09375L8.34375 0.40625C8.0625 0.125 7.5625 0.125 7.28125 0.40625L1.21875 6.5C0.90625 6.78125 0.90625 7.25 1.21875 7.53125L7.28125 13.625C7.5625 13.9062 8.03125 13.9062 8.34375 13.625L9.03125 12.9375Z"
+            />
+          </svg>
+
+          <!-- <svg width="24" height="24">
+            <use xlink:href="img/slide/slider-arrow.svg"></use>
+          </svg> -->
         </div>
         <div class="portfolio-slider__button portfolio-slider__button--next">
-          <img
-            src="img/slide/slider-arrow.svg"
-            alt="Icon: slider arrow"
-            class="portfolio-slider__button-img"
-          />
+          <svg
+            width="15"
+            height="14"
+            viewBox="0 0 15 14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.03125 12.9375C9.34375 12.625 9.3125 12.1562 9.03125 11.8438L5.25 8.25H14.25C14.6562 8.25 15 7.9375 15 7.5V6.5C15 6.09375 14.6562 5.75 14.25 5.75H5.25L9.03125 2.1875C9.3125 1.875 9.34375 1.40625 9.03125 1.09375L8.34375 0.40625C8.0625 0.125 7.5625 0.125 7.28125 0.40625L1.21875 6.5C0.90625 6.78125 0.90625 7.25 1.21875 7.53125L7.28125 13.625C7.5625 13.9062 8.03125 13.9062 8.34375 13.625L9.03125 12.9375Z"
+            />
+          </svg>
+        </div>
+        <div class="portfolio__cards cards">
+          <div class="swiper-slide portfolio-slider__item slide">
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-1.jpg"
+                alt="Image: slide 1"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Вебсайт, Лендинг</span>
+                <h3 class="slide__title">Проект Вебсайта</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-2.jpg"
+                alt="Image: slide 2"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle"
+                  >Панель навигации, UI/UX Дизайн</span
+                >
+                <h3 class="slide__title">Проект Дизайна</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-3.jpg"
+                alt="Image: slide 3"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Приложения, Мобильные, iOS</span>
+                <h3 class="slide__title">Проекты приложений</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-4.jpg"
+                alt="Image: slide 4"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Instagram</span>
+                <h3 class="slide__title">ПроектИллюстраций</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- /.container -->
@@ -284,63 +358,60 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide portfolio-slider__item slide">
-            <img
-              src="img/slide/slide-1.jpg"
-              alt="Image: slide 1"
-              class="slide__image"
-            />
-            <div class="slide-wrapper">
-              <span class="slide__subtitle">Вебсайт, Лендинг</span>
-              <h3 class="slide__title">Проект Вебсайта</h3>
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-1.jpg"
+                alt="Image: slide 1"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Вебсайт, Лендинг</span>
+                <h3 class="slide__title">Проект Вебсайта</h3>
+              </div>
             </div>
           </div>
           <div class="swiper-slide portfolio-slider__item slide">
-            <img
-              src="img/slide/slide-2.jpg"
-              alt="Image: slide 2"
-              class="slide__image"
-            />
-            <div class="slide-wrapper">
-              <span class="slide__subtitle"
-                >Панель навигации, UI/UX Дизайн</span
-              >
-              <h3 class="slide__title">Проект Дизайна</h3>
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-2.jpg"
+                alt="Image: slide 2"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle"
+                  >Панель навигации, UI/UX Дизайн</span
+                >
+                <h3 class="slide__title">Проект Дизайна</h3>
+              </div>
             </div>
           </div>
           <div class="swiper-slide portfolio-slider__item slide">
-            <img
-              src="img/slide/slide-3.jpg"
-              alt="Image: slide 3"
-              class="slide__image"
-            />
-            <div class="slide-wrapper">
-              <span class="slide__subtitle">Приложения, Мобильные, iOS</span>
-              <h3 class="slide__title">Проекты приложений</h3>
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-3.jpg"
+                alt="Image: slide 3"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Приложения, Мобильные, iOS</span>
+                <h3 class="slide__title">Проекты приложений</h3>
+              </div>
             </div>
           </div>
           <div class="swiper-slide portfolio-slider__item slide">
-            <img
-              src="img/slide/slide-4.jpg"
-              alt="Image: slide 4"
-              class="slide__image"
-            />
-            <div class="slide-wrapper">
-              <span class="slide__subtitle">Instagram</span>
-              <h3 class="slide__title">ПроектИллюстраций</h3>
+            <div class="portfolio-slider__item--border">
+              <img
+                src="img/slide/slide-4.jpg"
+                alt="Image: slide 4"
+                class="slide__image"
+              />
+              <div class="slide-wrapper">
+                <span class="slide__subtitle">Instagram</span>
+                <h3 class="slide__title">ПроектИллюстраций</h3>
+              </div>
             </div>
           </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <!-- <div class="portfolio-slider__button portfolio-slider__button--prev">
-          <img src="img/slide/slider-arrow.svg" alt="Icon: slider arrow" />
-        </div>
-        <div class="portfolio-slider__button portfolio-slider__button--next">
-          <img
-            src="img/slide/slider-arrow.svg"
-            alt="Icon: slider arrow"
-            class="portfolio-slider__button-img"
-          />
-        </div> -->
       </div>
     </section>
     <!-- /.portfolio -->
