@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -261,5 +262,89 @@
       <!-- /.container -->
     </section>
     <!-- /.services -->
+    <section class="portfolio">
+      <div class="container portfolio__container">
+        <span class="portfolio__subtitle section__subtitle">портфолио</span>
+        <h2 class="portfolio__title section__title">Наши проекты</h2>
+        <div class="portfolio-slider__button portfolio-slider__button--prev">
+          <img src="img/slide/slider-arrow.svg" alt="Icon: slider arrow" />
+        </div>
+        <div class="portfolio-slider__button portfolio-slider__button--next">
+          <img
+            src="img/slide/slider-arrow.svg"
+            alt="Icon: slider arrow"
+            class="portfolio-slider__button-img"
+          />
+        </div>
+      </div>
+      <!-- /.container -->
+      <!-- Slider main container -->
+      <div class="swiper-container portfolio-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide portfolio-slider__item slide">
+            <img
+              src="img/slide/slide-1.jpg"
+              alt="Image: slide 1"
+              class="slide__image"
+            />
+            <div class="slide-wrapper">
+              <span class="slide__subtitle">Вебсайт, Лендинг</span>
+              <h3 class="slide__title">Проект Вебсайта</h3>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <img
+              src="img/slide/slide-2.jpg"
+              alt="Image: slide 2"
+              class="slide__image"
+            />
+            <div class="slide-wrapper">
+              <span class="slide__subtitle"
+                >Панель навигации, UI/UX Дизайн</span
+              >
+              <h3 class="slide__title">Проект Дизайна</h3>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <img
+              src="img/slide/slide-3.jpg"
+              alt="Image: slide 3"
+              class="slide__image"
+            />
+            <div class="slide-wrapper">
+              <span class="slide__subtitle">Приложения, Мобильные, iOS</span>
+              <h3 class="slide__title">Проекты приложений</h3>
+            </div>
+          </div>
+          <div class="swiper-slide portfolio-slider__item slide">
+            <img
+              src="img/slide/slide-4.jpg"
+              alt="Image: slide 4"
+              class="slide__image"
+            />
+            <div class="slide-wrapper">
+              <span class="slide__subtitle">Instagram</span>
+              <h3 class="slide__title">ПроектИллюстраций</h3>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <!-- <div class="portfolio-slider__button portfolio-slider__button--prev">
+          <img src="img/slide/slider-arrow.svg" alt="Icon: slider arrow" />
+        </div>
+        <div class="portfolio-slider__button portfolio-slider__button--next">
+          <img
+            src="img/slide/slider-arrow.svg"
+            alt="Icon: slider arrow"
+            class="portfolio-slider__button-img"
+          />
+        </div> -->
+      </div>
+    </section>
+    <!-- /.portfolio -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
