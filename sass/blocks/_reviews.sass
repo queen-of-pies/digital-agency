@@ -1,8 +1,8 @@
 .reviews  
+  padding-top: 156px
   &__container
     position: relative
-    overflow: visible
-  padding-top: 156px
+    overflow: visible  
   &__title
     margin-top: 20px
     margin-bottom: 48px
@@ -12,12 +12,13 @@
       border: 1px solid #E5EAF4
       border-radius: 8px
       max-width: 555px
-      height: 267px
-      padding: 40px
+      min-height: 267px
+      padding: 39px
     &__text
       font-size: 14px
-      line-height: 24px
+      line-height: 2 4px
       color: $light
+      margin: 0
     &__button
       &--next
         position: absolute
@@ -25,6 +26,8 @@
         right: -2.5%
         z-index: 99
         outline: none
+        &--mobile
+          display: none
   &__user
     margin-bottom: 30px
 .user
