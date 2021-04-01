@@ -1,5 +1,7 @@
 const portfolioSlider = new Swiper(".portfolio-slider", {
   slidesPerView: 3.5,
+
+  spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: ".portfolio-slider__button--next",
@@ -29,8 +31,8 @@ const portfolioSlider = new Swiper(".portfolio-slider", {
 });
 const reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 30,
+  // slidesPerView: 2,
+  // spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: ".reviews-slider__button--next",
@@ -39,9 +41,11 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 0,
     },
     1200: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
   },
 });
