@@ -81,7 +81,9 @@
               </li>
             </ul>
             <!-- /.header__ul -->
-            <button type="button" class="header__button">Получить</button>
+            <button data-toggle="modal" type="button" class="header__button">
+              Получить
+            </button>
           </div>
           <button class="menu-button header__menu-button">
             <span class="menu-button__line"></span>
@@ -593,7 +595,9 @@
           Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы помочь
           всем, что вам нужно
         </p>
-        <button type="button" class="feedback__button">Пообщаемся?</button>
+        <button data-toggle="modal" type="button" class="feedback__button">
+          Пообщаемся?
+        </button>
       </div>
       <!-- /.container -->
     </section>
@@ -783,6 +787,51 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close hover"
+          ><img src="img/close.svg" alt="Icon: close"
+        /></a>
+        <h3 class="modal__title modal__title--mb-3">Напишите нам</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input input-phone"
+            placeholder="Номер телефона*"
+            name="phone"
+            minlength="16"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Комментарий"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Отправить</button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
