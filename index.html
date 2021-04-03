@@ -10,11 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header header__section">
+    <header class="header header-section">
       <div class="container">
         <div class="header-wrapper">
           <a class="header-logo" href="#"
@@ -28,7 +30,9 @@
               <li class="header__item">
                 <a target="_blank" href="#" class="header__link hover">Домой</a>
               </li>
-              <li class="header__item header__item--mr-28">
+              <li
+                class="header__item header__item-dropdown header__item--mr-28"
+              >
                 <div class="dropdown">
                   <a target="_blank" href="#" class="header__link hover"
                     ><div class="header__item-wrapper">
@@ -51,7 +55,17 @@
                   </div>
                 </div>
               </li>
-              <li class="header__item">
+              <li class="header__item header__item-mobile header__item--mr-28">
+                <a target="_blank" href="#" class="header__link hover"
+                  >Лэндинги</a
+                >
+              </li>
+              <li class="header__item header__item-mobile header__item--mr-28">
+                <a target="_blank" href="#" class="header__link hover"
+                  >Страницы</a
+                >
+              </li>
+              <li class="header__item header__item-dropdown">
                 <div class="dropdown">
                   <a target="_blank" href="#" class="header__link hover"
                     ><div class="header__item-wrapper">
@@ -103,10 +117,10 @@
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero__title">
-              Номер #1,<br /><span class="hero__title--small"> Южная Азия</span
+              Номер #1,<br /><span class="hero__title-small"> Южная Азия</span
               ><br />Агенство цифровых продуктов
             </h1>
-            <p class="hero__description section__description">
+            <p class="hero__description section-description">
               Мы даем результаты, помогающие Вам добиться экономии средств и
               времени без риска или накладных расходов на управление
             </p>
@@ -118,10 +132,10 @@
         <img
           src="img/hero-image-small.jpg"
           alt="Image: devices"
-          class="hero__image--small"
+          class="hero__image-small"
         />
         <div class="container">
-          <div class="hero-wrapper hero-wrapper__link">
+          <div class="hero-wrapper hero__link-wrapper">
             <a class="hero__link hover" href="#partners"
               ><img
                 src="img/hero-image-arrow.svg"
@@ -135,15 +149,14 @@
       <!-- /.hero -->
     </header>
     <!-- /.header -->
-    <section class="partners section">
-      <a name="partners"></a>
+    <section id="partners" class="partners section">
       <div class="container">
-        <span class="section__subtitle partners__subtitle">Наши партнеры</span>
+        <span class="section-subtitle partners__subtitle">Наши партнеры</span>
         <div class="partners-wrapper">
-          <h2 class="section__title partners__title">
+          <h2 class="section-title partners__title">
             Мы работали с ними,<br />Мы доверяем друг другу
           </h2>
-          <p class="section__description partners__description">
+          <p class="section-description partners__description">
             Наша команда предоставляет творческое образование высокого уровня
             для глобальной аудитории студентов, преподавателей и
             предпринимателей со всего мира
@@ -184,8 +197,8 @@
     <section class="services">
       <div class="container">
         <div class="services-wrapper">
-          <h2 class="services__title section__title">Что мы делаем</h2>
-          <p class="services__description section__description">
+          <h2 class="services__title section-title">Что мы делаем</h2>
+          <p class="services__description section-description">
             Мы работаем вместе с нашим клиентом, чтобы создать эффективный
             продукт.
           </p>
@@ -279,11 +292,10 @@
       <!-- /.container -->
     </section>
     <!-- /.services -->
-    <section class="portfolio">
-      <a name="portfolio"></a>
+    <section id="portfolio" class="portfolio">
       <div class="container portfolio__container">
-        <span class="portfolio__subtitle section__subtitle">портфолио</span>
-        <h2 class="portfolio__title section__title">Наши проекты</h2>
+        <span class="portfolio__subtitle section-subtitle">портфолио</span>
+        <h2 class="portfolio__title section-title">Наши проекты</h2>
         <div class="portfolio-slider__button portfolio-slider__button--prev">
           <svg
             width="15"
@@ -446,8 +458,8 @@
     <!-- /.portfolio -->
     <section class="reviews">
       <div class="container reviews__container">
-        <span class="reviews__subtitle section__subtitle">Отзывы</span>
-        <h2 class="reviews__title section__title">Что говорят о нас</h2>
+        <span class="reviews__subtitle section-subtitle">Отзывы</span>
+        <h2 class="reviews__title section-title">Что говорят о нас</h2>
         <div class="reviews-slider__button--next">
           <img src="img/reviews/slider-button.svg" alt="Icon: slider arrow" />
         </div>
@@ -515,8 +527,8 @@
     <!-- /.reviews -->
     <section class="social">
       <div class="container social__container">
-        <span class="social__subtitle section__subtitle">Наши соцсети</span>
-        <h2 class="social__title section__title">Будем друзьями</h2>
+        <span class="social__subtitle section-subtitle">Наши соцсети</span>
+        <h2 class="social__title section-title">Будем друзьями</h2>
         <div class="social-wrapper">
           <div class="social-card">
             <img
@@ -831,6 +843,9 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+    <a class="scrollup hover" href="#"
+      ><img class="scrollup__image" src="img/scrollup.png" alt="Icon: scrollup"
+    /></a>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

@@ -51,6 +51,15 @@ $(document).ready(function () {
       },
     },
   });
+
+  var menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", function () {
+    document
+      .querySelector(".header__nav")
+      .classList.toggle("header__nav--visible");
+    document.querySelector("body").classList.toggle("preventScroll");
+  });
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);

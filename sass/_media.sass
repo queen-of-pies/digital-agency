@@ -80,8 +80,32 @@
   .header
     &__section
       margin-bottom: 30px
-    &-nav
+    &__button
       display: none
+    &__nav
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 64px
+      &--visible
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 80%
+        overflow: scroll
+        background-color: $dark
+        z-index: 99
+    &__item
+      margin-top: 30px
+      margin-right: 0
+      &-dropdown
+        display: none
+      &-mobile
+        display: block
+    &__link
+      color: #ffffff    
     &__logo
       width: 83px
   .menu
