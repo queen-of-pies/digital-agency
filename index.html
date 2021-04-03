@@ -17,97 +17,105 @@
   </head>
   <body>
     <header class="header header-section">
-      <div class="container">
-        <div class="header-wrapper">
-          <a class="header-logo" href="#"
-            ><img
-              src="img/header-logo.svg"
-              alt="Logo: Ehua"
-              class="header__logo"
-          /></a>
-          <div class="header-nav">
-            <ul class="header__nav">
-              <li class="header__item">
-                <a target="_blank" href="#" class="header__link hover">Домой</a>
-              </li>
-              <li
-                class="header__item header__item-dropdown header__item--mr-28"
-              >
-                <div class="dropdown">
+      <div class="header-wrapper--mobile--fix">
+        <div class="container">
+          <div class="header-wrapper">
+            <a class="header-logo" href="#"
+              ><img
+                src="img/header-logo.svg"
+                alt="Logo: Ehua"
+                class="header__logo"
+            /></a>
+            <div class="header-nav">
+              <ul class="header__nav">
+                <li class="header__item">
                   <a target="_blank" href="#" class="header__link hover"
-                    ><div class="header__item-wrapper">
-                      Лэндинги<img
-                        src="img/arrow-down.svg"
-                        alt="Icon: arrow down"
-                        class="header__arrow"
-                      /></div
-                  ></a>
-                  <div class="dropdown__content">
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Лэндинг 1</a
-                    >
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Лэндинг 2</a
-                    >
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Лэндинг 3</a
-                    >
+                    >Домой</a
+                  >
+                </li>
+                <li
+                  class="header__item header__item-dropdown header__item--mr-28"
+                >
+                  <div class="dropdown">
+                    <a target="_blank" href="#" class="header__link hover"
+                      ><div class="header__item-wrapper">
+                        Лэндинги<img
+                          src="img/arrow-down.svg"
+                          alt="Icon: arrow down"
+                          class="header__arrow"
+                        /></div
+                    ></a>
+                    <div class="dropdown__content">
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Лэндинг 1</a
+                      >
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Лэндинг 2</a
+                      >
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Лэндинг 3</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="header__item header__item-mobile header__item--mr-28">
-                <a target="_blank" href="#" class="header__link hover"
-                  >Лэндинги</a
+                </li>
+                <li
+                  class="header__item header__item-mobile header__item--mr-28"
                 >
-              </li>
-              <li class="header__item header__item-mobile header__item--mr-28">
-                <a target="_blank" href="#" class="header__link hover"
-                  >Страницы</a
-                >
-              </li>
-              <li class="header__item header__item-dropdown">
-                <div class="dropdown">
                   <a target="_blank" href="#" class="header__link hover"
-                    ><div class="header__item-wrapper">
-                      Страницы<img
-                        src="img/arrow-down.svg"
-                        alt="Icon: arrow down"
-                        class="header__arrow"
-                      /></div
-                  ></a>
-                  <div class="dropdown__content">
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Страница 1</a
-                    >
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Страница 2</a
-                    >
-                    <a target="_blank" class="dropdown__link hover" href="#"
-                      >Страница 3</a
-                    >
+                    >Лэндинги</a
+                  >
+                </li>
+                <li
+                  class="header__item header__item-mobile header__item--mr-28"
+                >
+                  <a target="_blank" href="#" class="header__link hover"
+                    >Страницы</a
+                  >
+                </li>
+                <li class="header__item header__item-dropdown">
+                  <div class="dropdown">
+                    <a target="_blank" href="#" class="header__link hover"
+                      ><div class="header__item-wrapper">
+                        Страницы<img
+                          src="img/arrow-down.svg"
+                          alt="Icon: arrow down"
+                          class="header__arrow"
+                        /></div
+                    ></a>
+                    <div class="dropdown__content">
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Страница 1</a
+                      >
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Страница 2</a
+                      >
+                      <a target="_blank" class="dropdown__link hover" href="#"
+                        >Страница 3</a
+                      >
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="header__item">
-                <a target="_blank" href="#" class="header__link hover"
-                  >Помощь
-                </a>
-              </li>
-            </ul>
-            <!-- /.header__ul -->
-            <button data-toggle="modal" type="button" class="header__button">
-              Получить
+                </li>
+                <li class="header__item">
+                  <a target="_blank" href="#" class="header__link hover"
+                    >Помощь
+                  </a>
+                </li>
+              </ul>
+              <!-- /.header__ul -->
+              <button data-toggle="modal" type="button" class="header__button">
+                Получить
+              </button>
+            </div>
+            <button class="menu-button header__menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
             </button>
           </div>
-          <button class="menu-button header__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-          </button>
+          <!-- /.header-wraper -->
         </div>
-        <!-- /.header-wraper -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
       <div class="hero">
         <img
           src="img/hero-background.jpg"
@@ -618,11 +626,12 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer__social">
-            <img
-              src="img/footer/footer-logo.svg"
-              alt="Logo: ehua"
-              class="footer__logo"
-            />
+            <a href="#"
+              ><img
+                src="img/footer/footer-logo.svg"
+                alt="Logo: ehua"
+                class="footer__logo"
+            /></a>
             <span class="footer__text"
               >Создайте современный и креативный веб-сайт с crealand</span
             >
