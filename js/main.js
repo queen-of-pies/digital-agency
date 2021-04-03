@@ -5,8 +5,8 @@ $(document).ready(function () {
     // spaceBetween: 30,
     // Navigation arrows
     navigation: {
-      nextEl: ".portfolio-slider__button--next",
-      prevEl: ".portfolio-slider__button--prev",
+      nextEl: ".portfolio__button--next",
+      prevEl: ".portfolio__button--prev",
     },
     // Responsive breakpoints
     breakpoints: {
@@ -37,7 +37,7 @@ $(document).ready(function () {
     // spaceBetween: 30,
     // Navigation arrows
     navigation: {
-      nextEl: ".reviews-slider__button--next",
+      nextEl: ".reviews__button--next",
       // prevEl: ".portfolio-slider__button--prev",
     },
     breakpoints: {

@@ -113,15 +113,14 @@
     &-wrapper
       height: 65px
       background-color: #ffffff
-      &--mobile
-        &--fix
-          width: 100%
-          background-color: #ffffff
-          position: fixed
-          top: 0
-          left: 0
-          right: 0
-          z-index: 99
+    &-mobile
+      width: 100%
+      background-color: #ffffff
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99
   .menu
     &-button
       display: flex
@@ -283,7 +282,7 @@
       line-height: 24px
       margin-top: 19px
       margin-bottom: 8px
-    &__order
+    &-order
       order: -2
       &--change
         order: -1
@@ -295,8 +294,8 @@
       margin-bottom: 36px
     &-slider
       display: none
-      &__button
-        display: none
+    &__button
+      display: none
       &__item
         width: 280px
         margin-bottom: 18px
@@ -348,13 +347,14 @@
       &__text
         line-height: 22px
         text-align: center
-      &__button
-        &--next
-          display: none
-          &--mobile
-            display: block
-            position: static
-            margin-right: 15px
+    &__button
+      &--next
+        display: none
+        &--mobile
+          display: block
+          position: static
+          margin-right: 15px
+          outline: none
   .social
     padding-top: 37px
     padding-bottom: 28px
