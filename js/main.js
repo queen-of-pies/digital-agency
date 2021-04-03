@@ -81,4 +81,25 @@ $(document).ready(function () {
       $("body").css("overflow", "auto");
     }
   }
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Введите Ваше имя",
+          minlength: "Имя должно быть не короче 2 символов",
+        },
+        email: {
+          required: "Введите Ваш email",
+          email: "Ваш email должен быть в формате name@domain.com",
+        },
+        phone: {
+          required: "Введите Ваш номер телефона",
+          minlength: "Номер телефона должен быть не короче 10 цифр",
+        },
+      },
+    });
+  });
+
+  $(".input-phone").mask("+7(999)999-99-99");
 });
