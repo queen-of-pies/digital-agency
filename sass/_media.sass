@@ -73,7 +73,7 @@
       &--visible
         height: 70vh
         overflow: scroll
-@media (max-width: 767px)
+@media (max-width: 768px)
   body
     padding-top: 64px
   .container
@@ -95,19 +95,22 @@
         display: flex
         flex-direction: column
         align-items: center
-        height: 80%
+        height: 100%
+        width: 100%
         overflow: auto
         background-color: $dark
         z-index: 99
     &__item
-      margin-top: 30px
+      margin-top: 25px
       margin-right: 0
       &-dropdown
         display: none
       &-mobile
         display: block
     &__link
-      color: #ffffff    
+      color: #ffffff 
+      font-size: 20px
+      line-height: 24px   
     &__logo
       width: 83px
     &-wrapper
@@ -177,6 +180,24 @@
       flex-wrap: wrap
     &__product
       margin-bottom: 40px
+  .dropdown
+    &-mobile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 15px
+      &__link
+        text-decoration: none
+        color: $light
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 5px
+  .scrollup
+    display: none
+  .feedback
+    &__title
+      font-size: 36px
+    line-height: 48px
 @media ( max-width: 576px )
   .container
     max-width: 460px
@@ -294,14 +315,14 @@
       margin-bottom: 36px
     &-slider
       display: none
-    &__button
-      display: none
       &__item
         width: 280px
-        margin-bottom: 18px
         margin-right: 0
         &--border
           width: 100%
+          margin-bottom: 18px
+    &__button
+      display: none
     &__cards
       display: flex
       flex-direction: column
@@ -397,6 +418,7 @@
       padding: 13px 25px
   .footer
     padding-top: 48px
+    padding-bottom: 23px
     &__social
       max-width: 280px
       order: 1
