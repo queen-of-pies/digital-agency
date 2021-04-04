@@ -53,20 +53,29 @@
 .dropdown
   position: relative
   &__content
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 5px
+    padding-right: 5px
     display: none
     position: absolute
-    width: 100%
-    background-color: $dark    
+    align-items: start
+    // width: 100%
+    background-color: #E5E5E5
     z-index: 10
+    border-radius: 0 0 8px 8px
   &__link
     text-decoration: none
-    color: #ffffff
+    color: $dark
     margin-top: 5px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
   &:hover
     .dropdown
       &__content
        display: flex
        flex-direction: column
-       align-items: center
+       align-items: start
   &-mobile
     display: none
