@@ -70,6 +70,8 @@ $(document).ready(function () {
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
 
+  modalOverlay.on("click", closeModal);
+
   function openModal() {
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
